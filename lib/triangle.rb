@@ -10,10 +10,12 @@ class Triangle
   end
 
   def kind
+    # Check length greater than 0
     @sides.each do |length|
       if length <= 0
         raise TriangleError
       end
+    # Check sum of any 2 sides greater than third
     if (@a + @b) <= @c || (@a +@c) <= @b || (@b + @c) <= @a
         raise TriangleError
     end

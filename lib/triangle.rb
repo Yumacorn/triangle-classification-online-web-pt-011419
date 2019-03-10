@@ -13,6 +13,7 @@ class Triangle
     @sides.each do |length|
       if length <= 0
         raise TriangleError
+      end
       elsif (@a + @b) <= @c || (@a +@c) <= @b || (@b + @c) <= @a
         raise TriangleError
       end

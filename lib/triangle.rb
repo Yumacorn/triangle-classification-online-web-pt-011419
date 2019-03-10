@@ -19,6 +19,7 @@ class Triangle
     if (@a + @b) <= @c || (@a +@c) <= @b || (@b + @c) <= @a
         raise TriangleError
     end
+    # Return Triangle Type
     if @a == @b && @b == @c && @a == @c
         return :equilateral
     elsif @a == @b || @b == @c || @a == @c
